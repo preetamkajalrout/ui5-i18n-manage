@@ -1,0 +1,15 @@
+{
+  "name": "ui5-i18n-manage",
+  "version": "0.0.1",
+  "description": "A command line tool for generating diff or merging two i18n for same language",
+  "main": "index.js",
+  "bin": {
+    "ui5-i18n-manage": "./index.js"
+  },
+  "author": "Preetam Kajal Rout",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.9.0",
+    "progress": "^2.0.0"
+  }
+}
