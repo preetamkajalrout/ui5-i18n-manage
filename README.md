@@ -16,21 +16,28 @@ Node.js should be available for the tool to work
 
 ### How to use
 
-A step by step series of examples that tell you have to get a development env running
+Based on provided language code (default: "en"). input file names are created. e.g. If language code is *pt* then files will be *i18n_pt.properties* (initial) and *i18n_pt_mod.properties* (modified).
+Currently, the tools work in two different modes: **diff** and **merge** (default). *diff* mode can be selected using *-m* or *--mode* option.
+Following are the simplest use case for the tool
+```
+ui5-i18n-manage -i "C:\Users\user.name\development.project\i18n\"
+```
+The above example assumes other options default value:
+1. Language Code => en
+2. Operation mode => merge
+3. Output filename => i18n_en_final.properties
 
-Say what the step will be
+Following is an sample for diff mode
 
 ```
-Give the example
+ui5-i18n-manage -m diff -i "C:\Users\user.name\development.project\i18n\" -l pt -o i18n_pt_diff.properties
 ```
 
-And repeat
+To know about more properties of the tool. You can read the help in tool itself
 
 ```
-until finished
+ui5-i18n-manage -h
 ```
-
-End with an example of getting some data out of the system or using it for a little demo
 
 ## Authors
 
